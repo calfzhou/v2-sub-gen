@@ -7,5 +7,3 @@ for protocol in vmess ss socks; do
         echo ${protocol}://$(base64 -w 0 "$f")
     done
 done | base64 -w 0
-
-echo
